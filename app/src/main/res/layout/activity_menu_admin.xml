@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DadosEntrevistadoActivity">
+    tools:context=".MenuAdminActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageView5"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:layout_marginTop="39dp"
@@ -18,63 +18,53 @@
         app:srcCompat="@drawable/governodobrasil" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="104dp"
-        android:text="Dados do Entrevistado"
+        android:text="Dados das Pesquisas:"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="187dp"
-        android:text="Nome"
+        android:layout_marginEnd="112dp"
+        android:text="Quantidade de entrevistados: "
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="101dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="184dp"
-        android:text="Celular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="101dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="155dp"
-        android:text="Finalizar"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="154dp"
+        android:text="Eleitores"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="146dp"
+        android:text="Resultados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="162dp"
+        android:text="Sair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
