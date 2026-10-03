@@ -68,7 +68,7 @@
         app:srcCompat="@drawable/viuvanegrapng" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btPesquisaDois"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -83,49 +83,49 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="31dp"
-        android:text="Selecione entre os candidatos indicados quem você preferiria que assumisse o cardo de Presidência da República."
+        android:text="Selecione entre os candidatos indicados quem você preferiria que assumisse o cargo de Presidência da República."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <CheckBox
-        android:id="@+id/cb1tela4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+    <RadioGroup
+        android:id="@+id/rgCandidatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toStartOf="@+id/cdd1tela4"
-        app:layout_constraintTop_toBottomOf="@+id/pt1tela4" />
+        app:layout_constraintTop_toBottomOf="@+id/pt1tela4">
 
-    <CheckBox
-        android:id="@+id/cb2tela4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        app:layout_constraintEnd_toStartOf="@+id/cdd2tela4"
-        app:layout_constraintTop_toBottomOf="@+id/cb1tela4" />
+        <RadioButton
+            android:id="@+id/rbCM"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
 
-    <CheckBox
-        android:id="@+id/cb3tela4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        app:layout_constraintEnd_toStartOf="@+id/cdd3tela4"
-        app:layout_constraintTop_toBottomOf="@+id/cb2tela4" />
+        <RadioButton
+            android:id="@+id/rbHA"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp" />
 
-    <CheckBox
-        android:id="@+id/cb4tela4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        app:layout_constraintEnd_toStartOf="@+id/cdd4tela4"
-        app:layout_constraintTop_toBottomOf="@+id/cb3tela4" />
+        <RadioButton
+            android:id="@+id/rbHF"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp" />
 
-    <CheckBox
-        android:id="@+id/cb5tela4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        app:layout_constraintEnd_toStartOf="@+id/cdd5tela4"
-        app:layout_constraintTop_toBottomOf="@+id/cb4tela4" />
+        <RadioButton
+            android:id="@+id/rbt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp" />
+
+        <RadioButton
+            android:id="@+id/rbVN"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp" />
+
+    </RadioGroup>
 
     <TextView
         android:id="@+id/textView"

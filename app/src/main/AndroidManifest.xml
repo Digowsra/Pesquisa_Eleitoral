@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PesquisaEleitoral">
         <activity
-            android:name=".MainActivity"
+            android:name=".Pesquisa2Activity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -30,7 +30,7 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".Pesquisa2Activity"
+            android:name=".MainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
