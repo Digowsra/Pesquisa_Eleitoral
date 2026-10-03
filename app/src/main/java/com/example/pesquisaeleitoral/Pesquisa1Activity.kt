@@ -55,7 +55,7 @@ class Pesquisa1Activity : AppCompatActivity() {
             lifecycleScope.launch {
 
                 val pesquisa = Pesquisa(
-                    candidato = candidato
+                    candidatoEspontaneo = candidato
                 )
 
                 val idPesquisa = DatabaseProvider
