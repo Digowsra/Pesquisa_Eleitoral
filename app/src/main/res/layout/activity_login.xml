@@ -22,19 +22,20 @@
         android:id="@+id/tv1tela2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="92dp"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.265"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img1tela2" />
 
     <EditText
-        android:id="@+id/pt1tela2"
+        android:id="@+id/etLogin"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
+        android:layout_height="48sp"
+        android:layout_marginTop="15dp"
         android:ems="10"
+        android:hint="Login"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -45,41 +46,55 @@
         android:id="@+id/tv2tela2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="30dp"
         android:text="Senha"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.268"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pt1tela2" />
+        app:layout_constraintTop_toBottomOf="@+id/etLogin" />
 
     <EditText
-        android:id="@+id/pt2tela2"
+        android:id="@+id/etSenha"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_height="48sp"
+        android:layout_marginTop="10dp"
         android:ems="10"
+        android:hint="Senha"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv2tela2" />
 
     <Button
-        android:id="@+id/bt1tela2"
+        android:id="@+id/btEntrar"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="50dp"
-        android:text="Voltar"
+        android:layout_marginTop="116dp"
+        android:text="Entrar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pt2tela2" />
+        app:layout_constraintTop_toBottomOf="@+id/etSenha" />
 
     <Button
-        android:id="@+id/bt2tela2"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="51dp"
-        android:text="Entrar"
-        app:layout_constraintStart_toEndOf="@+id/bt1tela2"
-        app:layout_constraintTop_toTopOf="@+id/bt1tela2" />
+        android:id="@+id/btFecharApp"
+        android:layout_width="144dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:text="Fechar App"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEntrar"
+        tools:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSenha" />
 </androidx.constraintlayout.widget.ConstraintLayout>

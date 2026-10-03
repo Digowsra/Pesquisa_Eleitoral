@@ -21,12 +21,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val Intent = Intent (this, LoginActivity::class.java)
-            startActivity(Intent)
+            val login = Intent(this, LoginActivity::class.java)
+            startActivity(login)
             finish()
-         }, 3000)
-
-
+        }, 3000)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
