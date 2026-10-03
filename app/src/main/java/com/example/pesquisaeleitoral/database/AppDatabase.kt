@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
         Pesquisa::class,
         DadosEntrevistado::class
     ],
-    version = 4,
+    version = 5,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {

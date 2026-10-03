@@ -16,7 +16,9 @@ object DatabaseProvider {
                 context.applicationContext,
                 AppDatabase::class.java,
                 "pesquisa_eleitoral.db"
-            ).build()
+
+            ).fallbackToDestructiveMigration()
+                .build()
 
             INSTANCE = instance
 

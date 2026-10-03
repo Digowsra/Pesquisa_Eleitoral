@@ -18,7 +18,11 @@ class Pesquisa1Activity : AppCompatActivity() {
     private lateinit var etCandidato: EditText
     private lateinit var btPesquisaUm: Button
 
+    private lateinit var btVoltar: Button
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
 
         enableEdgeToEdge()
@@ -42,6 +46,7 @@ class Pesquisa1Activity : AppCompatActivity() {
 
         etCandidato = findViewById(R.id.etCandidato)
         btPesquisaUm = findViewById(R.id.btPesquisaUm)
+        btVoltar = findViewById(R.id.btVoltar)
 
         btPesquisaUm.setOnClickListener {
 
@@ -73,5 +78,17 @@ class Pesquisa1Activity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+
+// BOTÃO VOLTAR
+        btVoltar.setOnClickListener {
+            finish()
+        }
+    }
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+
+        // Limpa o campo para iniciar uma nova entrevista
+        etCandidato.text.clear()
     }
 }
+

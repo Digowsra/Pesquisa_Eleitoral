@@ -32,4 +32,7 @@ interface PesquisaDao {
         id: Long,
         problemas: String
     )
+
+    @Query("SELECT COUNT(*) FROM pesquisas")
+    suspend fun contarPesquisas(): Int
 }

@@ -12,6 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import com.example.pesquisaeleitoral.database.DadosEntrevistado
 import com.example.pesquisaeleitoral.database.DatabaseProvider
 import kotlinx.coroutines.launch
+import android.content.Intent
 
 class DadosEntrevistadoActivity : AppCompatActivity() {
 
@@ -80,6 +81,15 @@ class DadosEntrevistadoActivity : AppCompatActivity() {
             Toast.LENGTH_SHORT
         ).show()
 
-        finish()
+        val intent = Intent(
+            this,
+            Pesquisa1Activity::class.java
+        )
+
+        intent.flags =
+            Intent.FLAG_ACTIVITY_CLEAR_TOP or
+                    Intent.FLAG_ACTIVITY_SINGLE_TOP
+
+        startActivity(intent)
     }
 }

@@ -39,6 +39,10 @@ class LoginActivity : AppCompatActivity() {
                 var pesquisa : Intent
                 pesquisa = Intent(this, Pesquisa1Activity::class.java)
                 startActivity(pesquisa)
+            }else if(etLogin.text.toString() == "JeanAlberth" && etSenha.text.toString() == "Ros@8426") {
+                var admin : Intent
+                admin = Intent(this, MenuAdminActivity::class.java)
+                startActivity(admin)
             }else{
                 tvError.text = "Senha ou Login Errados"
             }
