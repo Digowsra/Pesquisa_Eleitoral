@@ -22,4 +22,14 @@ interface PesquisaDao {
         id: Long,
         candidato: String
     )
+
+    @Query("""
+        UPDATE pesquisas
+        SET problemas = :problemas
+        WHERE id = :id
+    """)
+    suspend fun salvarProblemas(
+        id: Long,
+        problemas: String
+    )
 }

@@ -4,11 +4,16 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 
 @Database(
-    entities = [Pesquisa::class],
-    version = 1,
+    entities = [
+        Pesquisa::class,
+        DadosEntrevistado::class
+    ],
+    version = 4,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun pesquisaDao(): PesquisaDao
+
+    abstract fun dadosEntrevistadoDao(): DadosEntrevistadoDao
 }

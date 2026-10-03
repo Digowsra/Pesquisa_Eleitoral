@@ -93,15 +93,13 @@ class Pesquisa2Activity : AppCompatActivity() {
                         idPesquisa,
                         candidatoSelecionado
                     )
+                val intent = Intent(
+                    this@Pesquisa2Activity,
+                    Pesquisa3Activity::class.java
+                )
 
-                // Aqui entra a próxima tela depois.
-                // val intent = Intent(
-                //     this@Pesquisa2Activity,
-                //     ProblemasActivity::class.java
-                // )
-                //
-                // intent.putExtra("ID_PESQUISA", idPesquisa)
-                // startActivity(intent)
+                intent.putExtra("ID_PESQUISA", idPesquisa)
+                startActivity(intent)
             }
         }
     }

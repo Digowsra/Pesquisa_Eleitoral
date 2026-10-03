@@ -3,15 +3,13 @@ package com.example.pesquisaeleitoral.database
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "pesquisas")
-data class Pesquisa(
+@Entity(tableName = "dados_entrevistados")
+data class DadosEntrevistado(
 
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
 
-    val candidatoEspontaneo: String,
+    val nome: String,
 
-    val candidatoEstimulado: String? = null,
-
-    val problemas: String? = null
+    val celular: String
 )

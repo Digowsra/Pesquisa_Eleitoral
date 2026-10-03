@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cbAF"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
@@ -38,76 +38,76 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/cbE"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
         android:text="Educação"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/cbAF" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/cbEst"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
         android:text="Estatizações"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/cbE" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/ckL"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
         android:text="Lazer"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+        app:layout_constraintTop_toBottomOf="@+id/cbEst" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/cbP"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
         android:text="Privatizações"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+        app:layout_constraintTop_toBottomOf="@+id/ckL" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/cbSB"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
         android:text="Saneamento Básico "
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+        app:layout_constraintTop_toBottomOf="@+id/cbP" />
 
     <CheckBox
-        android:id="@+id/checkBox7"
+        android:id="@+id/cbSaude"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
         android:text="Saúde"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+        app:layout_constraintTop_toBottomOf="@+id/cbSB" />
 
     <CheckBox
-        android:id="@+id/checkBox8"
+        android:id="@+id/cbSeguranca"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
         android:text="Segurança"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+        app:layout_constraintTop_toBottomOf="@+id/cbSaude" />
 
     <CheckBox
-        android:id="@+id/checkBox9"
+        android:id="@+id/cbT"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
         android:text="Transporte"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+        app:layout_constraintTop_toBottomOf="@+id/cbSeguranca" />
 
     <Button
         android:id="@+id/bt1tela5"
