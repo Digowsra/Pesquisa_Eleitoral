@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv1tela3" />
 
     <EditText
-        android:id="@+id/pt1tela3"
+        android:id="@+id/etCandidato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv2tela3" />
 
     <Button
-        android:id="@+id/bt1tela3"
+        android:id="@+id/btPesquisaUm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="226dp"
@@ -61,6 +61,6 @@
         android:text="Próximo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pt1tela3" />
+        app:layout_constraintTop_toBottomOf="@+id/etCandidato" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
